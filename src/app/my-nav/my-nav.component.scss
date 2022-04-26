@@ -1,5 +1,23 @@
+@import "../../styles.scss";
 .my-nav{
-    background-image: url("../../assets/images/candle-icon.jpg");
+    background-color: $main-bg-color;
+    color: $sec-letter;
+    border-bottom: solid $secondary-color;
+    div{
+        padding: 0.5rem;
+    }
+    .my-left{
+        background-image: url("../../assets/images/candle-icon.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .my-right{
+        a{
+            color: $letter-color;
+            font-size: large;
+            font-weight: bold;
+        }
+    }
     display: flex;
     justify-content: space-around;
 }
