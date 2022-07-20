@@ -1,23 +1,53 @@
-<div class="container my-wrapper">
-  <div class="my-hero">
-    <div class="my-left">
-      <div class="test">
-        <div class="line">
-          <span class="hero_black item1">OUR</span>
-          <span class="hero_black item2">BIGGEST</span>
+<div id="upper">
+  <div class="container my-wrapper">
+    <div class="my-hero">
+      <div class="my-left">
+        <div class="test">
+          <div class="line">
+            <span class="hero_black item1">OUR</span>
+            <span class="hero_black item2">BIGGEST</span>
+          </div>
+          <div class="line">
+            <span class="hero_black item3">DISCOVERY</span>
+            <span class="hero_black item4">IS</span>
+          </div>
+          <div class="line"><span class="hero_orange item5">YOU</span></div>
         </div>
-        <div class="line">
-          <span class="hero_black item3">DISCOVERY</span>
-          <span class="hero_black item4">IS</span>
-        </div>
-        <div class="line"><span class="hero_orange item5">YOU</span></div>
+      </div>
+      <div class="my-right">
+        <img
+          src="https://images.pexels.com/photos/7943998/pexels-photo-7943998.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7943998.jpg&fm=jpg"
+          alt="Alumni Image"
+        />
       </div>
     </div>
-    <div class="my-right">
-      <img
-        src="https://images.pexels.com/photos/7943998/pexels-photo-7943998.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7943998.jpg&fm=jpg"
-        alt="Alumni Image"
-      />
+  </div>
+</div>
+<div id="middle_outer">
+  <div class="container middle_inner">
+    <div id="middle_left">
+      <a href="">Reunion Weekend 2022</a><a href="">Distinguished Alumni</a
+      ><a href="">Career Resources</a><a href="">More Events</a>
+    </div>
+    <div id="middle_right">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa-brands fa-github"></a>
     </div>
   </div>
+</div>
+<div class="container cardate">
+  <div class="my_cards row">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let ent of news">
+      <div class="card" style="width: 18rem">
+        <img src="{{ ent.pic }}" class="card-img-top" alt="Error" />
+        <div class="card-body">
+          <h5 class="card-title">{{ ent.title }}</h5>
+          <p class="card-text">{{ ent.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dates"></div>
 </div>
